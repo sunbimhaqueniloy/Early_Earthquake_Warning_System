@@ -1,0 +1,12 @@
+{
+  "targets": [
+    {
+      "target_id": "HUB01",
+      "type": "apartment",
+      "city": "Dhaka",
+      "gas_enabled": true,
+      "has_elevator": true,
+      "power_policy": "essential_only"
+    }
+  ]
+}

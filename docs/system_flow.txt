@@ -1,0 +1,1 @@
+Waveform → Detection Hardware → Trigger → Backend → Command → Hub → Response Hardware → Output
