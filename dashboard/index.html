@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Early Warning Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: #e5e7eb;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .top-bar {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background: #22c55e;
+            color: white;
+            border: none;
+            padding: 14px 24px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .panel {
+            background: #111827;
+            border-radius: 14px;
+            padding: 20px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.3);
+        }
+
+        .panel h2 {
+            color: #60a5fa;
+            margin-bottom: 15px;
+        }
+
+        .map-box {
+            height: 420px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #94a3b8;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-marker {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background: red;
+            border-radius: 50%;
+            box-shadow: 0 0 20px red;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.6); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .info-line {
+            margin-bottom: 12px;
+            font-size: 17px;
+            line-height: 1.5;
+        }
+
+        .status-box {
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 10px;
+            background: #1f2937;
+        }
+
+        .danger {
+            color: #f87171;
+            font-weight: bold;
+        }
+
+        .warning {
+            color: #facc15;
+            font-weight: bold;
+        }
+
+        .safe {
+            color: #4ade80;
+            font-weight: bold;
+        }
+
+        #countdown {
+            font-size: 22px;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #fbbf24;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .footer-note {
+            margin-top: 20px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 900px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            .map-box {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🌍 Earthquake Early Warning Dashboard</h1>
+
+    <div class="top-bar">
+        <button onclick="simulateEarthquake()">Simulate Earthquake</button>
+    </div>
+
+    <div class="dashboard">
+        <div class="panel">
+            <h2>🗺️ Monitoring Map</h2>
+            <div class="map-box" id="mapBox">
+                Seismic Activity Zone
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>📡 Live Warning Panel</h2>
+
+            <div class="info-line" id="statusText">Status: Waiting for earthquake event...</div>
+            <div class="info-line" id="magnitudeText">Magnitude: --</div>
+            <div class="info-line" id="distanceText">Distance: --</div>
+            <div class="info-line" id="cityText">Target City: --</div>
+            <div class="info-line" id="alertText">Alert Level: --</div>
+
+            <div id="countdown">Countdown: --</div>
+
+            <div class="status-box">
+                <h2 style="font-size:18px;">🏢 Infrastructure Response</h2>
+                <ul id="infraList">
+                    <li>No action yet</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        Simulated UI for Early Earthquake Warning Project
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

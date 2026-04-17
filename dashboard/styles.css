@@ -1,0 +1,46 @@
+body {
+    font-family: Arial;
+    background: #0b0f1a;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: #00ffe5;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #1c2235;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,255,255,0.2);
+}
+
+.big {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.critical {
+    color: red;
+}
+
+.high {
+    color: orange;
+}
+
+.medium {
+    color: yellow;
+}
+
+.low {
+    color: green;
+}
