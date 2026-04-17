@@ -1,0 +1,11 @@
+{
+  "packet_type": "device_command",
+  "target_id": "HUB01",
+  "mode": "OFFLINE_FALLBACK",
+  "alarm": true,
+  "gas_off": true,
+  "main_power_off": false,
+  "essential_only": true,
+  "lift_stop": true,
+  "unlock_exit": true
+}

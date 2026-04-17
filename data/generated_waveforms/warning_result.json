@@ -1,0 +1,7 @@
+{
+  "target_id": "HUB01",
+  "distance_km": 3.014,
+  "p_wave_time_sec": 0.502,
+  "s_wave_time_sec": 0.861,
+  "warning_time_sec": 0.359
+}

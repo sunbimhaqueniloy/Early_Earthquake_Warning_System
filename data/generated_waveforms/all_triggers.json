@@ -1,0 +1,26 @@
+[
+  {
+    "packet_type": "station_trigger",
+    "station_id": "ST01",
+    "trigger": true,
+    "trigger_time_sec": 2.52,
+    "peak_amplitude": 0.106904,
+    "confidence": 0.85
+  },
+  {
+    "packet_type": "station_trigger",
+    "station_id": "ST02",
+    "trigger": true,
+    "trigger_time_sec": 2.83,
+    "peak_amplitude": 0.142526,
+    "confidence": 0.85
+  },
+  {
+    "packet_type": "station_trigger",
+    "station_id": "ST03",
+    "trigger": true,
+    "trigger_time_sec": 3.13,
+    "peak_amplitude": 0.144529,
+    "confidence": 0.85
+  }
+]

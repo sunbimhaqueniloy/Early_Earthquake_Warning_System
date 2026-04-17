@@ -1,0 +1,8 @@
+{
+  "packet_type": "local_trigger",
+  "hub_id": "HUB01",
+  "local_trigger": true,
+  "trigger_time_sec": 7.21,
+  "peak_local_amplitude": 0.75,
+  "confidence": 0.86
+}

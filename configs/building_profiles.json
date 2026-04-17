@@ -4,6 +4,8 @@
       "target_id": "HUB01",
       "type": "apartment",
       "city": "Dhaka",
+      "lat": 23.82,
+      "lon": 90.42,
       "gas_enabled": true,
       "has_elevator": true,
       "power_policy": "essential_only"

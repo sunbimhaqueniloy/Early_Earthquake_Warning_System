@@ -1,0 +1,11 @@
+{
+  "packet_type": "confirmed_event",
+  "event_id": "EQ_0001",
+  "confirmed": true,
+  "event_time_sec": 2.52,
+  "triggered_stations": [
+    "ST01",
+    "ST02",
+    "ST03"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "hub_id": "HUB01",
+  "active_mode": "ONLINE_EEW",
+  "gas_valve_state": "CLOSED",
+  "nonessential_power": "OFF",
+  "essential_power": "ON",
+  "alarm_state": "ON",
+  "lift_state": "STOPPED",
+  "exit_unlock": "ON"
+}

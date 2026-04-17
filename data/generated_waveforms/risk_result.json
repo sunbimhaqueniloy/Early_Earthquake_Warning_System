@@ -1,0 +1,9 @@
+{
+  "packet_type": "risk_result",
+  "target_id": "HUB01",
+  "distance_km": 3.014,
+  "warning_time_sec": 0.359,
+  "risk_level": "CRITICAL",
+  "building_type": "apartment",
+  "city": "Dhaka"
+}
